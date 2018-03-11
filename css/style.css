@@ -1,0 +1,31 @@
+* {
+  /* border: 1px solid pink; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  height: 99vh;
+  margin: 0;
+  justify-content: center;
+}
+
+.slide {
+  width: 75%;
+  height: 66%;
+  background-color: cornsilk;
+  align-self: center;
+  display: none;
+  padding: 1rem;
+}
+
+#slide1 {
+  display: block; /* init slide 1 to be visible */
+}
