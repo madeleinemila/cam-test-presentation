@@ -5,7 +5,7 @@ const nextSlide = function() {
   const next = document.getElementById(`slide${ count + 1 }`);
   if (next) {
     current.style.display = "none";
-    next.style.display = "block";
+    next.style.display = "flex";
     count++;
   }
 };
@@ -15,7 +15,7 @@ const prevSlide = function() {
   const prev = document.getElementById(`slide${ count - 1 }`);
   if (prev) {
     current.style.display = "none";
-    prev.style.display = "block";
+    prev.style.display = "flex";
     count--;
   }
 };
@@ -28,5 +28,16 @@ document.addEventListener('keyup', function(e) {
     case "ArrowLeft":
       prevSlide();
       break;
+    case "ArrowUp":
+      video.play();
+      break;
+    case "ArrowDown":
+      video.volume -= 0.05;
+      break;
   }
+});
+
+let video;
+document.addEventListener("DOMContentLoaded", function() {
+  video = document.getElementsByTagName('video')[0];
 });

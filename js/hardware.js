@@ -44,6 +44,7 @@ socket.on('connect', function () {
           break;
         case 51:
           // hardwareU = true;
+          video.play();
           break;
         case 52:
           // hardwareR = false;
@@ -57,6 +58,7 @@ socket.on('connect', function () {
           break;
         case 55:
           // hardwareD = true;
+          video.volume -= 0.05;
           break;
         // default:
           // hardwareL = false;
@@ -81,6 +83,7 @@ socket.on('connect', function () {
           break;
         case 61:
           // hardwareU2 = true;
+          video.play();
           break;
         case 62:
           // hardwareR2 = false;
@@ -94,6 +97,7 @@ socket.on('connect', function () {
           break;
         case 65:
           // hardwareD2 = true;
+          video.volume -= 0.05;
           break;
         // default:
         //   hardwareL2 = false;
