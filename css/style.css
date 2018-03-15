@@ -20,7 +20,6 @@ body {
 .slide {
   width: 95%;
   height: 90%;
-  /* background-color: cornsilk; */
   align-self: center;
   display: none;
   padding: 1rem;
@@ -31,9 +30,7 @@ body {
 }
 
 img {
-  /* max-height: 100%; */
   display: block;
-  /* width: 100%; */
   margin: 0 auto;
 }
 
@@ -57,10 +54,6 @@ img.smaller {
   margin: 0 auto;
 }
 
-.lge-text-container p {
-  /* font-size: 40px; */
-}
-
 img.three-down {
   max-height: 33%;
 }
@@ -74,7 +67,6 @@ h1 {
 
 h2 {
   font-size: 48px;
-  /* font-family: Helvetica; */
   text-transform: uppercase;
   font-weight: normal;
   font-family: Futura;
